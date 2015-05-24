@@ -52,17 +52,17 @@ load_theme_textdomain( 'devdmbootstrap3', get_template_directory() . '/languages
 
     register_default_headers( array(
         'wheel' => array(
-            'url' => '%s/img/deafaultlogo.png',
-            'thumbnail_url' => '%s/img/deafaultlogo.png',
+            'url' => '%s/imgs/logo-universidade.png',
+            'thumbnail_url' => '%s/imgs/logo-universidade.png',
             'description' => __( 'Your Business Name', 'devdmbootstrap3' )
         ))
 
     );
 
     $defaults = array(
-        'default-image'          => get_template_directory_uri() . '/img/deafaultlogo.png',
-        'width'                  => 300,
-        'height'                 => 100,
+        'default-image'          => get_template_directory_uri() . '/imgs/logo-universidade.png',
+        'width'                  => 281,
+        'height'                 => 61,
         'flex-height'            => true,
         'flex-width'             => true,
         'default-text-color'     => '000',

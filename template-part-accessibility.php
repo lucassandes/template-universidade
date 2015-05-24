@@ -14,7 +14,7 @@
         </li>
 
         <li>
-            <a accesskey="3" href="#SearchableText" id="link-buscar">
+            <a accesskey="3" href="#busca-input" id="link-buscar">
                 Ir para a busca <span>3</span>
             </a>
         </li>

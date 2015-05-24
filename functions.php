@@ -161,6 +161,9 @@ function wpb_first_and_last_menu_class($items)
 
 add_filter('wp_nav_menu_objects', 'wpb_first_and_last_menu_class');
 
+
+add_image_size( 'destaques-thumb', 450, 250, true ); // (cropped)
+
 /** se quiser first and last em childs:
  *
  *

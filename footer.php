@@ -1,5 +1,9 @@
-<div class="dmbs-footer">
-    <?php
+
+<div class="dmbs-footer footer">
+    <div class="text-center">
+        Creditos
+    </div>
+    <?php /*
     global $dm_settings;
     if ($dm_settings['author_credits'] != 0) : ?>
         <div class="row dmbs-author-credits">
@@ -7,13 +11,12 @@
                 echo esc_url($developer_uri); ?>">DevDmBootstrap3 <?php _e('created by', 'devdmbootstrap3') ?> Danny
                     Machal</a></p>
         </div>
-    <?php endif; ?>
+    <?php endif; */?>
 
     <?php get_template_part('template-part', 'footernav'); ?>
 </div>
 
-</div>
-<!-- end main container -->
+
 
 <?php wp_footer(); ?>
 <script>
@@ -34,6 +37,14 @@
         }
 
     }
+
+    //center big images
+  /*  jQuery("#banner-home >img").each(function(i, img) {
+        jQuery(img).css({
+            position: "relative",
+            left: (jQuery(img).parent().width() - jQuery(img).width()) / 2
+        });
+    });*/
 </script>
 </body>
 </html>

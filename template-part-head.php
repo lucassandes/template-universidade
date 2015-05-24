@@ -36,13 +36,13 @@
 
                 <!-- busca -->
                 <div class="col-md-4 ">
-                    <div class="widget-search-top">
+                    <div class="widget-search-top" id="busca-teste">
                         <form role="search" method="get" id="searchform" class="searchform"
                               action="<?php echo home_url('/'); ?>">
                             <div class="input-group">
-                                <input type="search" class="form-control" class="search-field" name="s" id="s"
+                                <input type="text" class="form-control" class="search-field" name="s" id="s" accesskey="3"
                                        placeholder="<?php echo esc_attr_x('Faça sua busca ...', 'placeholder') ?>"
-                                       name="s" title="<?php echo esc_attr_x('Search for:', 'label') ?>"/>
+                                       title="<?php echo esc_attr_x('Faça sua busca ...', 'label') ?>"/>
                                     <span class="input-group-btn">
                                             <button class="btn btn-default" type="submit" type="button"><span
                                                     class="glyphicon glyphicon-search" aria-hidden="true"></span>

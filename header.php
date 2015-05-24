@@ -11,5 +11,8 @@
     <!-- Alto contraste -->
     <link id="pagestyle" href="<?php echo get_stylesheet_directory_uri(); ?>/css/default.css" rel="stylesheet">
 
+    <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
 </head>
 <body <?php body_class(); ?>>
