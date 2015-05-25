@@ -7,7 +7,7 @@ html {
 
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 100px;
+  margin-bottom: 200px;
   /* For the Footer Menu */
   padding-bottom: 51px;
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
@@ -18,10 +18,21 @@ body {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 150px;
+  min-height: 200px;
   background-color: @primaria-escura;
   color:@complementar-clara;
   padding-top: 30px;
+
+  .credits {
+
+    font-size: 10px;
+    p {
+      color: darken(@complementar-clara, 30%);
+      border-top: 1px solid darken(@primaria-escura, 5%);
+      padding-top: 20px;
+      margin-top: 20px;
+    }
+  }
 }
 
 #alerta-aviso {

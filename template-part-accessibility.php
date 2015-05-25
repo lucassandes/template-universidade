@@ -8,7 +8,7 @@
         </li>
 
         <li>
-            <a accesskey="2" href="#left-menu" id="link-navegacao">
+            <a accesskey="2" href="#menu-principal" id="link-navegacao">
                 Ir para o menu <span>2</span>
             </a>
         </li>
@@ -20,7 +20,7 @@
         </li>
 
         <li class="last-item">
-            <a accesskey="4" href="#afooter" id="link-rodape">
+            <a accesskey="4" href="#footer" id="link-rodape">
                 Ir para o rodapé <span> 4 </span>
             </a>
         </li>
