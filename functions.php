@@ -185,5 +185,8 @@ add_image_size( 'destaques-thumb', 450, 250, true ); // (cropped)
  * add_filter(‘wp_nav_menu_objects’, ‘wpb_first_and_last_menu_class’);
  */
 
+ update_option('siteurl','http://lucassandes.com/cartilha-acessibilidade-usabilidade/template/');
+update_option('home','http://lucassandes.com/cartilha-acessibilidade-usabilidade/template/');
+
  
 ?>

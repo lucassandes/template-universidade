@@ -24,7 +24,7 @@
             aria-hidden="true">×</span>
     </button>
     <div class="">
-        <h4>Aviso aos navegantes!</h4>
+        <p><strong>Aviso aos navegantes!</strong></p>
 
         <p>Este tema foi criado para auxiliar desenvolvedores a criarem sítios de universidades públicas acessíveis e
             com boa usabilidade. Ele é fruto de uma cartilha, que você pode conferir <a
