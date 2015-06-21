@@ -30,3 +30,4 @@
 
 
 <?php endif; ?>
+<?php the_breadcrumb(); ?>

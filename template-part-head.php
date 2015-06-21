@@ -19,6 +19,7 @@
                                                                                  width="<?php echo get_custom_header()->width; ?>"
                                                                                  alt=""/></a>
                         </div>
+                        <h1 class="hidden"><?php bloginfo( 'name' ); ?></h1>
                     <?php endif; ?>
 
                     <?php /*apagar esse coment */ /*
@@ -60,3 +61,5 @@
         <?php endif; ?>
     </div>
 </header>
+
+

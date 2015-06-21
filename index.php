@@ -4,7 +4,9 @@
 
 <?php get_template_part('template-part', 'topnav'); ?>
 <div class="container">
-<!-- start content container -->
+
+
+    <!-- start content container -->
 <div class="row dmbs-content">
 
     <?php //left sidebar ?>
