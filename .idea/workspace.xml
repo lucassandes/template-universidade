@@ -57,10 +57,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="alto-contraste.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="alto-contraste.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/less/alto-contraste.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.71283096" vertical-offset="789" max-vertical-offset="5202">
+            <state vertical-scroll-proportion="-4.43038" vertical-offset="789" max-vertical-offset="5202">
               <caret line="67" column="15" selection-start-line="67" selection-start-column="15" selection-end-line="67" selection-end-column="15" />
               <folding />
             </state>
@@ -72,6 +72,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-1.8173077" vertical-offset="508" max-vertical-offset="1343">
               <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="52" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/functions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-17.884615" vertical-offset="28" max-vertical-offset="6273">
+              <caret line="29" column="21" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -129,6 +139,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.31835207" vertical-offset="0" max-vertical-offset="1275">
+              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -149,6 +169,7 @@
         <option value="$PROJECT_DIR$/template-part-accessibility.php" />
         <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/less/alto-contraste.less" />
+        <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
   </component>
@@ -225,7 +246,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../selfbaby" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="var&#9;FILE&#9;file://C:/wamp/www/template-tcc/wp-content/themes/template-universidade/less/variables.less&#10;custom&#9;FILE&#9;file://C:/wamp/www/template-tcc/wp-content/themes/template-universidade/less/custom.less&#10;footer&#9;FILE&#9;file://C:/wamp/www/template-tcc/wp-content/themes/template-universidade/footer.php&#10;ac&#9;FILE&#9;file://C:/wamp/www/template-tcc/wp-content/themes/template-universidade/template-part-accessibility.php&#10;theme&#9;FILE&#9;file://D:/wamp/www/templateTCC/wp-content/themes/template-universidade/theme-options.php&#10;page-i&#9;FILE&#9;file://D:/wamp/www/templateTCC/wp-content/themes/template-universidade/page-index.php&#10;func&#9;FILE&#9;file://D:/wamp/www/templateTCC/wp-content/themes/template-universidade/functions.php&#10;header&#9;FILE&#9;file://D:/wamp/www/templateTCC/wp-content/themes/template-universidade/header.php&#10;index&#9;FILE&#9;file://D:/wamp/www/templateTCC/wp-content/themes/template-universidade/index.php&#10;short&#9;FILE&#9;file://D:/wamp/www/templateTCC/wp-content/themes/template-universidade/shortcodes.php&#10;funct&#9;FILE&#9;file://D:/wamp/www/templateTCC/wp-content/themes/template-universidade/functions.php&#10;vari&#9;FILE&#9;file://D:/wamp/www/templateTCC/wp-content/themes/template-universidade/less/variables.less&#10;functions&#9;FILE&#9;file://D:/wamp/www/templateTCC/wp-content/themes/template-universidade/functions.php&#10;varia&#9;FILE&#9;file://D:/wamp/www/templateTCC/wp-content/themes/template-universidade/less/variables.less&#10;cus&#9;FILE&#9;file://D:/wamp/www/templateTCC/wp-content/themes/template-universidade/less/custom.less" />
+    <property name="SearchEverywhereHistoryKey" value="style.&#9;FILE&#9;file://C:/wamp/www/template-tcc/wp-content/themes/template-universidade/style.css&#10;styl&#9;FILE&#9;file://C:/wamp/www/template-tcc/wp-content/themes/template-universidade/js/styleswitcher.js&#10;func&#9;FILE&#9;file://C:/wamp/www/template-tcc/wp-content/themes/template-universidade/functions.php&#10;var&#9;FILE&#9;file://C:/wamp/www/template-tcc/wp-content/themes/template-universidade/less/variables.less&#10;custom&#9;FILE&#9;file://C:/wamp/www/template-tcc/wp-content/themes/template-universidade/less/custom.less&#10;footer&#9;FILE&#9;file://C:/wamp/www/template-tcc/wp-content/themes/template-universidade/footer.php&#10;ac&#9;FILE&#9;file://C:/wamp/www/template-tcc/wp-content/themes/template-universidade/template-part-accessibility.php&#10;theme&#9;FILE&#9;file://D:/wamp/www/templateTCC/wp-content/themes/template-universidade/theme-options.php&#10;page-i&#9;FILE&#9;file://D:/wamp/www/templateTCC/wp-content/themes/template-universidade/page-index.php&#10;header&#9;FILE&#9;file://D:/wamp/www/templateTCC/wp-content/themes/template-universidade/header.php&#10;index&#9;FILE&#9;file://D:/wamp/www/templateTCC/wp-content/themes/template-universidade/index.php&#10;short&#9;FILE&#9;file://D:/wamp/www/templateTCC/wp-content/themes/template-universidade/shortcodes.php&#10;funct&#9;FILE&#9;file://D:/wamp/www/templateTCC/wp-content/themes/template-universidade/functions.php&#10;vari&#9;FILE&#9;file://D:/wamp/www/templateTCC/wp-content/themes/template-universidade/less/variables.less&#10;functions&#9;FILE&#9;file://D:/wamp/www/templateTCC/wp-content/themes/template-universidade/functions.php&#10;varia&#9;FILE&#9;file://D:/wamp/www/templateTCC/wp-content/themes/template-universidade/less/variables.less&#10;cus&#9;FILE&#9;file://D:/wamp/www/templateTCC/wp-content/themes/template-universidade/less/custom.less" />
     <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
     <property name="FullScreen" value="false" />
     <property name="LayoutCode.rearrangeEntriesLESS" value="false" />
@@ -317,17 +338,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/page-index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2424" max-vertical-offset="3451">
-          <caret line="190" column="41" selection-start-line="190" selection-start-column="41" selection-end-line="190" selection-end-column="41" />
-          <folding>
-            <element signature="e#6#38#0#PHP" expanded="false" />
-            <element signature="e#1219#3442#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="860" max-vertical-offset="1734">
@@ -654,22 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0864486" vertical-offset="28" max-vertical-offset="6273">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/styleswitcher.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.678572" vertical-offset="920" max-vertical-offset="1853">
-          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="39491">
@@ -740,8 +734,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/less/alto-contraste.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.71283096" vertical-offset="789" max-vertical-offset="5202">
+        <state vertical-scroll-proportion="-4.43038" vertical-offset="789" max-vertical-offset="5202">
           <caret line="67" column="15" selection-start-line="67" selection-start-column="15" selection-end-line="67" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.884615" vertical-offset="28" max-vertical-offset="6273">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/styleswitcher.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.678572" vertical-offset="920" max-vertical-offset="1853">
+          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31835207" vertical-offset="0" max-vertical-offset="1275">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
           <folding />
         </state>
       </provider>
