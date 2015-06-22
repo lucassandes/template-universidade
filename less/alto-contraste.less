@@ -1,0 +1,300 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+//** Deprecated `@screen-xs` as of v3.0.1
+@screen-xs:                  480px;
+//** Deprecated `@screen-xs-min` as of v3.2.0
+@screen-xs-min:              @screen-xs;
+//** Deprecated `@screen-phone` as of v3.0.1
+@screen-phone:               @screen-xs-min;
+
+// Small screen / tablet
+//** Deprecated `@screen-sm` as of v3.0.1
+@screen-sm:                  768px;
+@screen-sm-min:              @screen-sm;
+//** Deprecated `@screen-tablet` as of v3.0.1
+@screen-tablet:              @screen-sm-min;
+
+// Medium screen / desktop
+//** Deprecated `@screen-md` as of v3.0.1
+@screen-md:                  992px;
+@screen-md-min:              @screen-md;
+//** Deprecated `@screen-desktop` as of v3.0.1
+@screen-desktop:             @screen-md-min;
+
+// Large screen / wide desktop
+//** Deprecated `@screen-lg` as of v3.0.1
+@screen-lg:                  1200px;
+@screen-lg-min:              @screen-lg;
+//** Deprecated `@screen-lg-desktop` as of v3.0.1
+@screen-lg-desktop:          @screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
+
+
+@amarelo: #FFF333;
+
+body {
+  background: black;
+}
+ul {
+  li {
+    color: white;
+  }
+}
+
+ol {
+  li {
+    color: white;
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: white;
+}
+.form-control {
+  background: black !important;
+  color: white !important;
+}
+
+input {
+  background: black !important;
+  color: white !important;
+}
+
+label {
+  color: white;
+}
+
+//botoes
+.btn-default, .btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger {
+  background: black;
+  color: white;
+  &:hover {
+    background: black;
+    text-decoration: underline;
+
+  }
+}
+
+//alertas
+.alert-success, .alert-info, .alert-warning, .alert-danger {
+  background: black;
+  border-color: white;
+  color: white;
+  .close {
+    color: @amarelo;
+    text-shadow: none;
+    opacity: 1;
+  }
+}
+
+code {
+  background: lighten(black, 10%);
+  color: white;
+}
+
+p{
+  color: white;
+}
+a {
+  color: @amarelo;
+}
+hr {
+  border-top: 1px solid white;
+}
+
+#footer {
+  border-top: 1px solid white;
+  background-color: black;
+  color: white;
+  .credits {
+    p {
+      color: white;
+      border-top: 1px solid white;
+
+    }
+  }
+}
+
+#header {
+  background: black;
+  color: white;
+
+  #accessibility-bar {
+    ul {
+      li {
+        a {
+          color: @amarelo;
+        }
+
+        a:hover {
+          text-decoration: underline;
+        }
+        span {
+          background-color: white;
+          color: black;
+          padding: 0px 3px;
+        }
+      }
+
+    }
+
+  }
+}
+
+#breadcrumbs {
+
+
+  .breadcrumb {
+    background: black;
+    color: white;
+
+    border: 1px solid white;
+
+  }
+}
+
+.dmbs-top-menu {
+  // margin-bottom: -20px;
+  background: lighten(black, 10%);
+
+}
+
+@media (min-width: @screen-sm-min) {
+
+  .dmbs-top-menu {
+    background: lighten(black, 10%);
+    .navbar {
+      background: lighten(black, 10%);
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+      color: @amarelo;
+      background: lighten(black, 10%);
+    }
+  }
+}
+
+#banner-home {
+
+  .banner-legenda {
+
+    h3 {
+      background-color: black;
+      a {
+        color: white;
+      }
+    }
+    p {
+      background-color: black;
+      color: white;
+    }
+  }
+}
+
+.widget {
+
+  background: black;
+
+  border: 1px solid white;
+
+  h3 {
+    background: lighten(black, 10%);
+    color: white;
+  }
+
+  ul {
+    list-style: square;
+    li {
+
+      a {
+        color: @amarelo;
+      }
+    }
+  }
+}
+
+.categorias {
+
+  h2 {
+    color: white;
+    border-bottom: 1px solid white;
+  }
+
+  h3 {
+    a {
+      color: @amarelo;
+    }
+  }
+}
+
+#conteudo-principal {
+  h2 {
+    color: white;
+    border-bottom: 1px solid white;
+  }
+}
+
+.dmbs-content {
+  h2.page-header {
+    color: white;
+    border-bottom: 1px solid white;
+  }
+
+  h2.post-header {
+    color: white;
+  }
+
+  .social-net {
+
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+
+
+
+  .tags {
+    border: 1px solid white;
+    background: black;
+  }
+  .destaques-home {
+    h3 {
+
+      a {
+        color: @amarelo;
+      }
+    }
+  }
+  .noticias-home {
+    .noticias-item {
+      h3 {
+        a {
+          color: @amarelo;
+        }
+      }
+    }
+  }
+
+
+  .programas-unversitarios-item {
+    margin-top: 15px;
+
+    h3 {
+      filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+      -moz-opacity: 0.8;
+      opacity: 0.8;
+      background: black;
+      color: white;
+
+    }
+
+    &:hover {
+      filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+      -moz-opacity: 0.8;
+      opacity: 0.8;
+    }
+  }
+}

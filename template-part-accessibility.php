@@ -1,3 +1,4 @@
+
 <div id="accessibility-bar">
 
     <ul id="accessibility" class="hidden-sm hidden-xs">
@@ -32,11 +33,11 @@
         </li>
 
         <li id="siteaction-contraste">
-            <a href="javascript:swapStyleSheet()" title="Alto Contraste" accesskey="6">Alto Contraste</a>
+            <a  href="javascript:setActiveStyleSheet(tituloToggle) " href="#" accesskey="6">Alto Contraste</a>
         </li>
 
         <li id="mapa-sitio">
-            <a href="javascript:swapStyleSheet()" title="Alto Contraste" accesskey="7">Mapa do Sítio</a>
+          <a href="javascript:swapStyleSheet()" title="Alto Contraste" accesskey="7">Mapa do Sítio</a>
         </li>
     </ul>
 
