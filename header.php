@@ -22,7 +22,7 @@
 
 
 
-<!-- Aviso:  Quando for usar o tema, remova as linhas abaixo-->
+<!-- ~ Aviso:  Quando for usar o tema, remova as linhas abaixo-->
 <?php /*if ( is_front_page() ): ?>
 <div class="alert alert-warning alert-dismissible fade in" id="alerta-aviso" role="alert">
     <button type="button" class="close close-alert" data-dismiss="alert" aria-label="Close"><span

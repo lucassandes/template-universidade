@@ -210,7 +210,7 @@ img.alignnone {
 }
 
 .dmbs-top-menu {
-  margin-bottom: -20px;
+ // margin-bottom: -20px;
   background: @primaria-escura;
 
   .navbar {
@@ -240,7 +240,7 @@ img.alignnone {
     }
 
     .nav > li.first-item > a {
-      padding-left: 0;
+     // padding-left: 0;
     }
 
     .navbar-collapse {
@@ -358,7 +358,41 @@ img.alignnone {
   }
 
 }
+.widget {
 
+  padding: 0 15px 15px 15px;
+  background:@complementar-clara;
+  border-radius: 4px;
+  border: 1px solid lighten(@secundaria, 20%);
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+  h3 {
+    background:@secundaria;
+    color: white;
+    font-size: @font-size-h4;
+    font-weight: bold;
+    padding: 10px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 0;
+  }
+
+
+  ul{
+    padding-left: 15px;
+    //list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAG0lEQVQIW2NMXb76PwMSmB0ZyshIoSCyeTA2AB9gEAYQ+4BOAAAAAElFTkSuQmCC");
+    list-style-image: url(@square); //square está definido em variables
+
+    li {
+      padding-bottom: 10px;
+      a{
+        color: @primaria;
+
+      }
+    }
+  }
+}
 .categorias {
 
   h2 {
@@ -397,6 +431,7 @@ img.alignnone {
   p {
     font-size: @font-size-base*1.15;
     line-height: @font-size-base*1.8;
+    margin: 0 0 20px
   }
 
   h5 {
@@ -409,6 +444,7 @@ img.alignnone {
     padding-bottom: 15px;
     letter-spacing: -1px;
     border-bottom: 1px solid lighten(@secundaria, 20%);
+    margin-top: 20px;
   }
 
   h2.post-header {
