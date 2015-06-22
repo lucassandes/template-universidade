@@ -35,19 +35,15 @@
 
         </div>
         <div class="clear"></div>
+
+        <?php
+    global $dm_settings;
+    if ($dm_settings['author_credits'] != 0) : ?>
         <div class="col-md-12 credits">
             <p>Tema Wordpress desenvolvido por <a href="http://lucassandes.com" target="_blank">Lucas Sandes</a>,
                 baseado no tema <a href="https://wordpress.org/themes/devdmbootstrap3/" target="_blank">DevDmBootstrap3</a> de <a href="http://devdm.com/" target="_blank">Danny Machal</a> (com a devida autorização do autor) </p>
         </div>
-        <?php /*
-    global $dm_settings;
-    if ($dm_settings['author_credits'] != 0) : ?>
-        <div class="row dmbs-author-credits">
-            <p class="text-center"><a href="<?php global $developer_uri;
-                echo esc_url($developer_uri); ?>">DevDmBootstrap3 <?php _e('created by', 'devdmbootstrap3') ?> Danny
-                    Machal</a></p>
-        </div>
-    <?php endif; */ ?>
+    <?php endif;  ?>
     </div>
     <?php get_template_part('template-part', 'footernav'); ?>
 </footer>

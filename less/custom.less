@@ -13,8 +13,12 @@ body {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
-hr{
+hr {
   border-top: 1px solid @complementar-clara;
+}
+
+img.alignnone {
+  max-width: 100%;
 }
 
 #footer {
@@ -355,27 +359,97 @@ hr{
 
 }
 
-.dmbs-content {
+.categorias {
 
   h2 {
-     font-weight: bold;
+    font-weight: bold;
+    color: @primaria;
+    padding-bottom: 10px;
+    letter-spacing: -1px;
+    border-bottom: 1px solid lighten(@secundaria, 20%);
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    font-size: @font-size-large;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: none;
+    margin: 0;
+    a {
+      color: @primaria;
+    }
+  }
+}
+
+#conteudo-principal {
+  h2 {
+    font-size: @font-size-large;
+    font-weight: bold;
+    color: @primaria;
+    padding-bottom: 5px;
+    border-bottom: 1px solid @secundaria;
+  }
+}
+
+.dmbs-content {
+
+  p {
+    font-size: @font-size-base*1.15;
+    line-height: @font-size-base*1.8;
+  }
+
+  h5 {
+    line-height: @font-size-base*1.3;
+    margin-bottom: 15px;
+  }
+  h2.page-header {
+    font-weight: bold;
     color: @primaria;
     padding-bottom: 15px;
     letter-spacing: -1px;
-    border-bottom: 1px solid @secundaria;
+    border-bottom: 1px solid lighten(@secundaria, 20%);
   }
 
+  h2.post-header {
+    font-weight: bold;
+    color: @primaria;
 
-  #conteudo-principal {
-    h2 {
-      font-size: @font-size-large;
-      font-weight: bold;
-      color: @primaria;
-      padding-bottom: 5px;
-      border-bottom: 1px solid @secundaria;
+    letter-spacing: -1px;
+    border-bottom: none;
+  }
+
+  .social-net {
+    padding-bottom: 15px;
+    border-top: 1px solid lighten(@secundaria, 20%);
+    border-bottom: 1px solid lighten(@secundaria, 20%);
+    padding: 15px 0 13px 0;
+    margin-bottom: 30px;
+  }
+
+  .resumo {
+    p {
+      font-size: @font-size-h3;
+      line-height:@font-size-h3*1.4;
+      margin-bottom: 30px;
     }
   }
 
+  .postmeta {
+    font-size: @font-size-base*0.9;
+  }
+
+    .tags {
+      border: 1px solid lighten(@secundaria, 20%);
+      background: lighten(@complementar-clara, 5%);
+      border-radius: 4px;
+      margin: 30px 0;
+      p {
+        font-size: @font-size-base;
+        padding: 10px;
+        margin-bottom: 0;
+      }
+    }
   .destaques-home {
     h3 {
       font-size: @font-size-base;

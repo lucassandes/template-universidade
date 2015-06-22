@@ -193,8 +193,9 @@ function the_breadcrumb()
     // Get the query & post information
     global $post, $wp_query;
     $category = get_the_category();
-
-    // Build the breadcrums
+    $category_name = single_cat_title("", false);
+   // echo $category_name;
+    // Build the breadcrums. $category[0]->cat_name .
     //echo '<ul id="' . $id . '" class="' . $class . '">';
     if (!is_front_page()) {
         echo '<div id="breadcrumbs">';
@@ -218,7 +219,8 @@ function the_breadcrumb()
         } else if (is_category()) {
 
             // Category page
-            echo '<li class="item-current item-cat-' . $category[0]->term_id . ' item-cat-' . $category[0]->category_nicename . '"><strong class="bread-current bread-cat-' . $category[0]->term_id . ' bread-cat-' . $category[0]->category_nicename . '">' . $category[0]->cat_name . '</strong></li>';
+            //echo '<li class="item-current item-cat-' . $category[0]->term_id . ' item-cat-' . $category[0]->category_nicename . '"><strong class="bread-current bread-cat-' . $category[0]->term_id . ' bread-cat-' . $category[0]->category_nicename . '">' . $category[0]->cat_name . '</strong></li>';
+            echo '<li class="item-current item-cat-' . $category[0]->term_id . ' item-cat-' . $category[0]->category_nicename . '"><strong class="bread-current bread-cat-' . $category[0]->term_id . ' bread-cat-' . $category[0]->category_nicename . '">' . $category_name . '</strong></li>';
 
         } else if (is_page()) {
 
@@ -329,8 +331,13 @@ function the_breadcrumb()
     echo '</div>'; //end #breadcumbs
 }
 
+////////////////////////////////////////////////////////////////////
+// Custom thumbnail sizes
+////////////////////////////////////////////////////////////////////
 
 add_image_size('destaques-thumb', 450, 250, true); // (cropped)
+add_image_size('categorias-thumb', 385, 235, true);
+
 
 /** se quiser first and last em childs:
  *

@@ -7,91 +7,116 @@
 
 
     <!-- start content container -->
-<div class="row dmbs-content">
+    <div class="row dmbs-content">
 
-    <?php //left sidebar ?>
-    <?php get_sidebar( 'left' ); ?>
+        <?php //left sidebar ?>
+        <?php get_sidebar('left'); ?>
 
-    <div class="col-md-<?php devdmbootstrap3_main_content_width(); ?> dmbs-main">
+        <div class="col-md-<?php devdmbootstrap3_main_content_width(); ?> dmbs-main">
 
-        <?php
+            <?php
 
             //if this was a search we display a page header with the results count. If there were no results we display the search form.
             if (is_search()) :
 
-                 $total_results = $wp_query->found_posts;
+                $total_results = $wp_query->found_posts;
 
-                 echo "<h2 class='page-header'>" . sprintf( __('%s Search Results for "%s"','devdmbootstrap3'),  $total_results, get_search_query() ) . "</h2>";
+                echo "<h2 class='page-header'>" . sprintf(__('%s Search Results for "%s"', 'devdmbootstrap3'), $total_results, get_search_query()) . "</h2>";
 
-                 if ($total_results == 0) :
-                     get_search_form(true);
-                 endif;
+                if ($total_results == 0) :
+                    get_search_form(true);
+                endif;
 
             endif;
 
-        ?>
+            ?>
 
             <?php // theloop
-                if ( have_posts() ) : while ( have_posts() ) : the_post();
+            if (have_posts()) : while (have_posts()) : the_post();
 
-                    // single post
-                    if ( is_single() ) : ?>
+                // single post
+                if (is_single()) : ?>
 
-                        <div <?php post_class(); ?>>
+                    <div <?php post_class(); ?>>
 
-                            <h2 class="page-header"><?php the_title() ;?></h2>
+                        <h2 class="post-header"><?php the_title(); ?></h2>
+                        <?php get_template_part('template-part', 'postmeta'); ?>
 
-                            <?php if ( has_post_thumbnail() ) : ?>
+
+                        <div class="social-net">
+                            <?php //social net gerado automaticamente por www.addthis.com ?>
+                            <div class="addthis_native_toolbox"></div>
+                        </div>
+
+                        <?php /*if ( has_post_thumbnail() ) : ?>
                                 <?php the_post_thumbnail(); ?>
                                 <div class="clear"></div>
-                            <?php endif; ?>
-                            <?php the_content(); ?>
-                            <?php wp_link_pages(); ?>
-                            <?php get_template_part('template-part', 'postmeta'); ?>
-                            <?php comments_template(); ?>
+                            <?php endif;*/ ?>
+                        <?php if (has_excerpt()) : ?>
+                            <div class="resumo">
+                                <?php the_excerpt(); ?>
+                            </div>
+                            <div class="clear"></div>
+                        <?php endif; ?>
 
+                        <?php the_content(); ?>
+                        <?php wp_link_pages(); ?>
+                        <?php get_template_part('template-part', 'tags'); ?>
+
+
+                        <div class="social-net">
+                            <?php //social net gerado automaticamente por www.addthis.com ?>
+                            <div class="addthis_native_toolbox"></div>
                         </div>
-                    <?php
-                    // list of posts
-                    else : ?>
-                       <div <?php post_class(); ?>>
+                        <?php //Comentários Desabilitados ?>
+                        <?php //comments_template(); ?>
 
-                            <h2 class="page-header">
-                                <a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'devdmbootstrap3' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
-                            </h2>
+                    </div>
+                <?php
+                // list of posts
+                else : ?>
+                    <div <?php post_class(); ?>>
 
-                            <?php if ( has_post_thumbnail() ) : ?>
-                               <?php the_post_thumbnail(); ?>
-                                <div class="clear"></div>
-                            <?php endif; ?>
-                            <?php the_content(); ?>
-                            <?php wp_link_pages(); ?>
-                            <?php get_template_part('template-part', 'postmeta'); ?>
-                            <?php  if ( comments_open() ) : ?>
-                                   <div class="clear"></div>
-                                  <p class="text-right">
-                                      <a class="btn btn-success" href="<?php the_permalink(); ?>#comments"><?php comments_number(__('Leave a Comment','devdmbootstrap3'), __('One Comment','devdmbootstrap3'), '%' . __(' Comments','devdmbootstrap3') );?> <span class="glyphicon glyphicon-comment"></span></a>
-                                  </p>
-                            <?php endif; ?>
-                       </div>
+                        <h2 class="page-header">
+                            <a href="<?php the_permalink(); ?>"
+                               title="<?php echo esc_attr(sprintf(__('Permalink to %s', 'devdmbootstrap3'), the_title_attribute('echo=0'))); ?>"
+                               rel="bookmark"><?php the_title(); ?></a>
+                        </h2>
 
-                     <?php  endif; ?>
+                        <?php if (has_post_thumbnail()) : ?>
+                            <?php the_post_thumbnail(); ?>
+                            <div class="clear"></div>
+                        <?php endif; ?>
+                        <?php the_content(); ?>
+                        <?php wp_link_pages(); ?>
+                        <?php get_template_part('template-part', 'postmeta'); ?>
+                        <?php if (comments_open()) : ?>
+                            <div class="clear"></div>
+                            <p class="text-right">
+                                <a class="btn btn-success"
+                                   href="<?php the_permalink(); ?>#comments"><?php comments_number(__('Leave a Comment', 'devdmbootstrap3'), __('One Comment', 'devdmbootstrap3'), '%' . __(' Comments', 'devdmbootstrap3')); ?>
+                                    <span class="glyphicon glyphicon-comment"></span></a>
+                            </p>
+                        <?php endif; ?>
+                    </div>
 
-                <?php endwhile; ?>
+                <?php endif; ?>
+
+            <?php endwhile; ?>
                 <?php posts_nav_link(); ?>
-                <?php else: ?>
+            <?php else: ?>
 
-                    <?php get_404_template(); ?>
+                <?php get_404_template(); ?>
 
             <?php endif; ?>
 
-   </div>
+        </div>
 
-   <?php //get the right sidebar ?>
-   <?php get_sidebar( 'right' ); ?>
+        <?php //get the right sidebar ?>
+        <?php get_sidebar('right'); ?>
 
-</div>
-<!-- end content container -->
+    </div>
+    <!-- end content container -->
 </div>
 <!-- end main container -->
 <?php get_footer(); ?>

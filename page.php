@@ -21,6 +21,7 @@
 
                 <h2 class="page-header"><?php the_title(); ?></h2>
 
+
                 <?php the_content(); ?>
                 <?php wp_link_pages(); ?>
                 <?php //Comentários estão desabilitados ?>

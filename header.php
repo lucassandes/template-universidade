@@ -14,8 +14,13 @@
     <!-- Google fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
+    <!-- Redes sociais. Créditos:  www.addthis.com/dashboard  -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-558725595d95e7d0" async="async"></script>
+
 </head>
 <body <?php body_class(); ?>>
+
+
 
 <!-- Aviso:  Quando for usar o tema, remova as linhas abaixo-->
 <?php /*if ( is_front_page() ): ?>
