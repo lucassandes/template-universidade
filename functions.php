@@ -206,7 +206,7 @@ function the_breadcrumb()
 
 
         // Home page
-        echo '<li class="item-home no-saparator"><a class="bread-link bread-home" href="' . get_home_url() . '" title="' . $home_title . '">' . $home_title . '</a></li>';
+        echo '<li class="item-home no-saparator"><a class="bread-link bread-home" href="' . get_home_url() . '/" title="' . $home_title . '">' . $home_title . '</a></li>';
         //echo '<li class="separator separator-home"> ' . $separator . ' </li>';
 
         if (is_single()) {

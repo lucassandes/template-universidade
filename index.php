@@ -12,7 +12,7 @@
         <?php //left sidebar ?>
         <?php get_sidebar('left'); ?>
 
-        <div class="col-md-<?php devdmbootstrap3_main_content_width(); ?> dmbs-main">
+        <div class="col-md-<?php devdmbootstrap3_main_content_width(); ?> dmbs-main" id="conteudo-principal">
 
             <?php
 
@@ -21,7 +21,7 @@
 
                 $total_results = $wp_query->found_posts;
 
-                echo "<h2 class='page-header'>" . sprintf(__('%s Search Results for "%s"', 'devdmbootstrap3'), $total_results, get_search_query()) . "</h2>";
+                echo "<h2 class='page-header'>" . sprintf(__('%s Resultados da busca para "%s"', 'devdmbootstrap3'), $total_results, get_search_query()) . "</h2>";
 
                 if ($total_results == 0) :
                     get_search_form(true);
@@ -75,30 +75,30 @@
                 <?php
                 // list of posts
                 else : ?>
-                    <div <?php post_class(); ?>>
-
-                        <h2 class="page-header">
+            <div <?php post_class('categorias'); ?>>
+                <?php if (has_post_thumbnail()) : ?>
+                    <div class="col-md-3 col-sm-4">
+                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('categorias-thumb', array('class' => 'img-responsive alignleft')); ?></a>
+                    </div>
+                <?php endif; ?>
+                <?php if (has_post_thumbnail()) : ?>
+                <div class="col-md-9 col-sm-8 ">
+                    <?php else: ?>
+                    <div class="col-md-12">
+                        <?php endif; ?>
+                        <h3>
                             <a href="<?php the_permalink(); ?>"
                                title="<?php echo esc_attr(sprintf(__('Permalink to %s', 'devdmbootstrap3'), the_title_attribute('echo=0'))); ?>"
                                rel="bookmark"><?php the_title(); ?></a>
-                        </h2>
-
-                        <?php if (has_post_thumbnail()) : ?>
-                            <?php the_post_thumbnail(); ?>
-                            <div class="clear"></div>
-                        <?php endif; ?>
-                        <?php the_content(); ?>
-                        <?php wp_link_pages(); ?>
+                        </h3>
                         <?php get_template_part('template-part', 'postmeta'); ?>
-                        <?php if (comments_open()) : ?>
-                            <div class="clear"></div>
-                            <p class="text-right">
-                                <a class="btn btn-success"
-                                   href="<?php the_permalink(); ?>#comments"><?php comments_number(__('Leave a Comment', 'devdmbootstrap3'), __('One Comment', 'devdmbootstrap3'), '%' . __(' Comments', 'devdmbootstrap3')); ?>
-                                    <span class="glyphicon glyphicon-comment"></span></a>
-                            </p>
-                        <?php endif; ?>
+                        <?php the_excerpt(); ?>
+                        <?php wp_link_pages(); ?>
                     </div>
+
+                </div>
+                <div class="clear"></div>
+                <hr/>
 
                 <?php endif; ?>
 

@@ -11,7 +11,7 @@
         <?php //left sidebar ?>
         <?php get_sidebar('left'); ?>
 
-        <div class="col-md-<?php devdmbootstrap3_main_content_width(); ?> dmbs-main categorias">
+        <div class="col-md-<?php devdmbootstrap3_main_content_width(); ?> dmbs-main categorias" id="conteudo-principal">
             <h2><?php single_cat_title(); ?></h2>
 
             <div class="row">

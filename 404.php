@@ -13,7 +13,7 @@
             <?php //left sidebar ?>
             <?php get_sidebar('left'); ?>
 
-            <div class="col-md-<?php devdmbootstrap3_main_content_width(); ?> dmbs-main">
+            <div class="col-md-<?php devdmbootstrap3_main_content_width(); ?> dmbs-main" id="conteudo-principal">
 
                 <h2><?php _e('Desculpe-nos, página não econtrada', 'devdmbootstrap3'); ?></h2>
 

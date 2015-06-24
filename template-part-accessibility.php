@@ -33,11 +33,11 @@
         </li>
 
         <li id="siteaction-contraste">
-            <a href="javascript:setActiveStyleSheet(tituloToggle)" accesskey="6">Alto Contraste</a>
+            <a href="javascript:setActiveStyleSheet(tituloToggle)" accesskey="6" title="Ativar/desativar folha de Alto Contraste">Alto Contraste</a>
         </li>
 
         <li id="mapa-sitio">
-          <a href="javascript:swapStyleSheet()" title="Alto Contraste" accesskey="7">Mapa do Sítio</a>
+          <a href="http://lucassandes.com/cartilha-acessibilidade-usabilidade/template/mapa-do-sitio/" title="Ir para o Mapa do Sítio" accesskey="7">Mapa do Sítio</a>
         </li>
     </ul>
 

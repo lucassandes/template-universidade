@@ -78,11 +78,11 @@
  * </div>
  * </div>*/ ?>
 
-</div>
+
 
 <div class="container">
     <!-- start content container -->
-    <div id="conteudo-principal" class="row dmbs-content">
+    <div id="conteudo-principal" class="row dmbs-content conteudo-principal-estilo ">
         <div class="col-md-9">
             <h2> Destaques</h2>
 
