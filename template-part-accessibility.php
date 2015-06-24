@@ -15,7 +15,7 @@
         </li>
 
         <li>
-            <a accesskey="3" href="#busca-input" id="link-buscar">
+            <a href="#busca-input" id="link-buscar">
                 Ir para a busca <span>3</span>
             </a>
         </li>
@@ -33,7 +33,7 @@
         </li>
 
         <li id="siteaction-contraste">
-            <a  href="javascript:setActiveStyleSheet(tituloToggle) " href="#" accesskey="6">Alto Contraste</a>
+            <a href="javascript:setActiveStyleSheet(tituloToggle)" accesskey="6">Alto Contraste</a>
         </li>
 
         <li id="mapa-sitio">

@@ -20,21 +20,15 @@
     <?php if (has_post_thumbnail()) : ?>
         <div class="outer">
             <div class="inner">
-                <!-- <img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/banner-home.png" alt=""
-                             class="img-responsive"/> -->
                 <?php the_post_thumbnail('full', array('class' => 'img-responsive')); ?>
-
-
             </div>
 
         </div>
         <div class="banner-legenda text-center">
-            <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-
-            <p><?php the_excerpt(); ?></p>
+            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+            <?php the_excerpt(); ?>
         </div>
-        <!--<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('destaques-thumb', array('class' => 'img-responsive')); ?></a>
-                <div class="clear"></div> -->
+
     <?php endif; ?>
 
     <?php ?>
@@ -95,6 +89,7 @@
             <div class="row destaques-home">
                 <?php
                 $query = new WP_Query(array('category_name' => 'destaques', 'posts_per_page' => 3));
+                if($query->have_posts()):
                 while ($query->have_posts()) :
                     $query->the_post(); ?>
                     <div class="destaques-item col-md-4 col-sm-4">
@@ -106,6 +101,9 @@
                         <?php ?>
                     </div>
                 <?php endwhile; ?>
+                <?php else: ?>
+                    <div class="alert alert-warning" role="alert">Ainda não há posts cadastrados na categoria <strong>Destaques</strong></div>
+                <?php endif; ?>
             </div>
         </div>
 
@@ -113,6 +111,7 @@
             <h2> Notícias</h2>
             <?php
             $query = new WP_Query(array('category_name' => 'noticias', 'posts_per_page' => 3));
+            if($query->have_posts()):
             while ($query->have_posts()) :
                 $query->the_post(); ?>
                 <div class="noticias-item">
@@ -122,6 +121,9 @@
 
                 </div>
             <?php endwhile; ?>
+            <?php else: ?>
+                <div class="alert alert-warning" role="alert">Ainda não há posts cadastrados na categoria <strong>Notícias</strong></div>
+            <?php endif; ?>
             <?php
             // Get the ID of a given category
             $category_id = get_cat_ID('Notícias');
@@ -140,21 +142,21 @@
             <div class="row programas-unversitarios-home">
                 <div class="col-sm-4 col-xs-6 programas-unversitarios-item">
                     <a href="#">
-                        <img src="https://placeimg.com/400/330/tech" alt="Imagem de Tecnologia" class="img-responsive"/>
+                        <img src="<?php echo get_template_directory_uri(); ?>/imgs/programa_universitario1.jpg" alt="Imagem de Tecnologia" class="img-responsive"/>
                         <h3>Iniciação Científica</h3>
                     </a>
                 </div>
 
                 <div class="col-sm-4 col-xs-6 programas-unversitarios-item">
                     <a href="#">
-                        <img src="http://lorempixel.com/400/330/business/" alt="Imagem de Tecnologia" class="img-responsive"/>
+                        <img src="<?php echo get_template_directory_uri(); ?>/imgs/programa_universitario4.jpg" alt="Imagem de Tecnologia" class="img-responsive"/>
                         <h3>Iniciação Científica</h3>
                     </a>
                 </div>
 
                 <div class="col-sm-4 col-xs-6 programas-unversitarios-item">
                     <a href="#">
-                        <img src="http://lorempixel.com/400/330/technics/" alt="Imagem de Tecnologia" class="img-responsive"/>
+                        <img src="<?php echo get_template_directory_uri(); ?>/imgs/programa_universitario3.jpg" alt="Imagem de Tecnologia" class="img-responsive"/>
                         <h3>Iniciação Científica</h3>
                     </a>
                 </div>

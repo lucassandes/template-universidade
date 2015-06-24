@@ -322,13 +322,13 @@ function the_breadcrumb()
             // 404 page
             echo '<li>' . 'Error 404' . '</li>';
         }
-
+        echo '</ol>';
+        echo '</div>'; //end container
+        echo '</div>'; //end #breadcumbs
     }
 
     // echo '</ul>';
-    echo '</ol>';
-    echo '</div>'; //end container
-    echo '</div>'; //end #breadcumbs
+
 }
 
 ////////////////////////////////////////////////////////////////////
