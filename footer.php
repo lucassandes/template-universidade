@@ -1,11 +1,13 @@
 <footer class="dmbs-footer" id="footer">
     <div class="container">
-        <div class="col-sm-4">
+        <div class="col-sm-4 footer-info">
             <p><strong>Universidade Federal Fictícia</strong></p>
 
             <p>Avenida Marginal Leste, 1421<br/>
                 São José dos Campos - SP<br/>
-                12000-000</p>
+              </p>
+            <p>contato@universidade.com.br<br/>
+           (12) 3900-0000</p>
 
         </div>
 
@@ -14,6 +16,7 @@
             <!--<img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/logo-universidade-small.png"
                  alt="Logo Universidade" class="img-responsive center-block"/>
                 -->
+            <p class="text-center hidden-xs"><strong><?php bloginfo( 'name' ); ?></strong> nas redes sociais</p>
             <div class="center-icons ">
                 <ul class="soc">
                     <li><a class="soc-facebook" href="#"><span class="hidden">Facebook</span></a></li>
@@ -23,15 +26,14 @@
                     <li><a class="soc-rss soc-icon-last" href="<?php bloginfo('rss2_url'); ?>"><span
                                 class="hidden">RSS</span></a></li>
                 </ul>
+
+
             </div>
         </div>
 
         <div class="col-sm-4 text-right">
-            <p><strong>Universidade Federal Fictícia</strong></p>
+            <p class="back-to-top"><a href="#topo"><span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span> Voltar ao topo</a></p>
 
-            <p>Avenida Marginal Leste, 1421<br/>
-                São José dos Campos - SP<br/>
-                12000-000</p>
 
         </div>
         <div class="clear"></div>

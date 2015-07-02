@@ -29,7 +29,7 @@
 
     <ul id="portal-siteactions">
         <li id="siteaction-accessibility">
-            <a href="#" title="Acessibilidade" accesskey="5">Acessibilidade</a>
+            <a href="<?php echo esc_url(home_url()); ?>/acessibilidade/" title="Acessibilidade" accesskey="5">Acessibilidade</a>
         </li>
 
         <li id="siteaction-contraste">
@@ -37,7 +37,7 @@
         </li>
 
         <li id="mapa-sitio">
-          <a href="http://lucassandes.com/cartilha-acessibilidade-usabilidade/template/mapa-do-sitio/" title="Ir para o Mapa do Sítio" accesskey="7">Mapa do Sítio</a>
+          <a href="<?php echo esc_url(home_url()); ?>/mapa-do-sitio/" title="Ir para o Mapa do Sítio" accesskey="7">Mapa do Sítio</a>
         </li>
     </ul>
 
