@@ -1,7 +1,7 @@
 <footer class="dmbs-footer" id="footer">
     <div class="container">
         <div class="col-sm-4 footer-info">
-            <p><strong>Universidade Federal Fictícia</strong></p>
+            <p><strong><?php bloginfo( 'name' ); ?></strong></p>
 
             <p>Avenida Marginal Leste, 1421<br/>
                 São José dos Campos - SP<br/>
@@ -13,9 +13,7 @@
 
         <div class="col-sm-4">
 
-            <!--<img src="<?php echo get_stylesheet_directory_uri(); ?>/imgs/logo-universidade-small.png"
-                 alt="Logo Universidade" class="img-responsive center-block"/>
-                -->
+
             <p class="text-center hidden-xs"><strong><?php bloginfo( 'name' ); ?></strong> nas redes sociais</p>
             <div class="center-icons ">
                 <ul class="soc">
