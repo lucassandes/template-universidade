@@ -22,17 +22,7 @@
                         <h1 class="hidden"><?php bloginfo( 'name' ); ?></h1>
                     <?php endif; ?>
 
-                    <?php /*apagar esse coment */ /*
-                        <div class="col-md-8 dmbs-header-text">
-                            <?php if ( get_header_textcolor() != 'blank' ) : ?>
-                                <h1><a class="custom-header-text-color" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-                                <h4 class="custom-header-text-color"><?php bloginfo( 'description' ); ?></h4>
-                            <?php endif; ?>
-                            <?php else : ?>
-                                <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-                                <h4><?php bloginfo( 'description' ); ?></h4>
 
-                        </div> */ ?>
                 <?php endif; ?>
 
                 <!-- busca -->
@@ -49,12 +39,10 @@
                                                     class="glyphicon glyphicon-search" aria-hidden="true"></span>
                                             </button>
                                      </span>
-                                <!--<input type="submit" id="searchsubmit" value="Pesquisar"> -->
                             </div>
                         </form>
                     </div>
                 </div>
-
                 <!-- /busca -->
             </div>
 

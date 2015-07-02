@@ -1,4 +1,4 @@
-
+<!-- barra de acessibilidade -->
 <div id="accessibility-bar">
 
     <ul id="accessibility" class="hidden-sm hidden-xs">
@@ -42,3 +42,4 @@
     </ul>
 
 </div>
+<!-- /barra de acessibilidade -->

@@ -16,7 +16,7 @@ load_theme_textdomain( 'devdmbootstrap3', get_template_directory() . '/languages
     function toolbar_link_to_dmbs_options( $wp_admin_bar ) {
         $args = array(
             'id'    => 'devdm_theme_options',
-            'title' => __('DevDm Options','devdmbootstrap3'),
+            'title' => __('Opções do tema','devdmbootstrap3'),
             'href'  => home_url() . '/wp-admin/themes.php?page=devdm-theme-options',
             'meta'  => array( 'class' => 'devdm-theme-options' ),
             'parent' => 'site-name'
@@ -303,10 +303,10 @@ load_theme_textdomain( 'devdmbootstrap3', get_template_directory() . '/languages
                         </td>
                     </tr>
 
-                    <tr valign="top"><th scope="row"><?php _e('Give Danny His Credit?','devdmbootstrap3') ;?></th>
+                    <tr valign="top"><th scope="row"><?php _e('Exibir créditos do tema','devdmbootstrap3') ;?></th>
                         <td>
                             <input type="checkbox" id="author_credits" name="dm_options[author_credits]" value="1" <?php checked( true, $settings['author_credits'] ); ?> />
-                            <label for="author_credits"><?php _e('Show me some love and keep a link to DevDm.com in your footer.','devdmbootstrap3') ;?></label>
+                            <label for="author_credits"><?php _e('Exibir créditos no footer com nome e link para página do autor.','devdmbootstrap3') ;?></label>
                         </td>
                     </tr>
 

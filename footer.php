@@ -54,26 +54,6 @@
 
 <?php wp_footer(); ?>
 
-<script>
-    //toogle stylesheet
-    var style = 0;
-    function zzzswapStyleSheet() {
-
-        if (style == 0) {
-            document.getElementById('pagestyle').setAttribute('href', '<?php echo get_stylesheet_directory_uri(); ?>/css/alto-contraste.css');
-            style = 1;
-            //console.log(style);
-        }
-
-        else {
-            document.getElementById('pagestyle').setAttribute('href', '<?php echo get_stylesheet_directory_uri(); ?>/css/default.css');
-            style = 0;
-            //console.log(style);
-        }
-    }
-
-</script>
-
 
 </body>
 </html>
