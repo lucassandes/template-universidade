@@ -149,6 +149,36 @@
         </div>
 
         <div class="clear respiro"></div>
+
+
+
+        <div class="col-md-12">
+            <h2>Cursos da Graduação</h2>
+
+            <div class="row programas-unversitarios-home">
+                <div class="col-sm-4 cursos-graduacao-item">
+                    <a href="<?php echo esc_url(home_url()); ?>/ciencia-da-computacao/">
+                        <img src="<?php echo get_template_directory_uri(); ?>/imgs/ciencia_computacao.jpg" alt="Imagem de um computador com códigos na tela" class="img-responsive"/>
+                        <h3>Ciência da Computação</h3>
+                    </a>
+                </div>
+
+                <div class="col-sm-4 cursos-graduacao-item">
+                    <a href="<?php echo esc_url(home_url()); ?>/matematica-computacional/">
+                        <img src="<?php echo get_template_directory_uri(); ?>/imgs/mat_computacional.jpg" alt="Imagem com materiais de estudo" class="img-responsive"/>
+                        <h3>Matemática Computacional</h3>
+                    </a>
+                </div>
+
+                <div class="col-sm-4 cursos-graduacao-item">
+                    <a href="<?php echo esc_url(home_url()); ?>/engenharia-da-computacao/">
+                        <img src="<?php echo get_template_directory_uri(); ?>/imgs/eng_computacao.jpg" alt="Imagem com peças de hardware" class="img-responsive"/>
+                        <h3>Engenharia da Computação</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="clear respiro"></div>
     </div>
     <!-- end content container -->
 </div>
